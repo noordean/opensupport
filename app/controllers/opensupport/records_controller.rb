@@ -1,9 +1,10 @@
 require_dependency "opensupport/application_controller"
 
 module Opensupport
-  ProductsController = Class.new(ApplicationController) do
+  class RecordsController < ApplicationController
     def index
       puts "-------here-------"
+      puts params
       puts Opensupport.resource_names
       puts "-------here-------"
     end

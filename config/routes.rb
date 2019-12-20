@@ -1,3 +1,3 @@
 Opensupport::Engine.routes.draw do
-  resources :products, only: %i[ index ]
+  root "records#index"
 end
